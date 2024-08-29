@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.tmb.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.784 s <<< FAILURE! -- in com.tmb.runner.TestRunner
+Title of your feature.Title of your scenario outline #2 -- Time elapsed: 0.019 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+	at com.tmb.stepdefinition.LoginStepDefinition.i_verify_the_fail_in_step(LoginStepDefinition.java:92)
+	at ✽.I verify the Fail in step(file:///C:/Users/garga/eclipse-workspace/CucumberDemo/src/test/resources/feature/login.feature:37)
+
