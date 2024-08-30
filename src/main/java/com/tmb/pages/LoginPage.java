@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.URL;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import java.net.MalformedURLException;
 
 public class LoginPage {
 	public static WebDriver driver;
