@@ -11,14 +11,12 @@ public class LoginPage {
 	public static WebDriver driver;
 	ChromeOptions co= new ChromeOptions();
 	
-	public WebDriver getdriver  throws MalformedURLException (){
+	public WebDriver getdriver() throws MalformedURLException{
 		WebDriverManager.chromedriver().setup();
 		co.addArguments("--remote-origin-policy=.*");
 		driver =new ChromeDriver(co);
 		driver =new RemoteWebDriver(new URL("http://10.0.0.68:4444"), co);
-		//driver.get("https://www.google.co.in");
+		driver.get("https://www.google.co.in");
 		return driver;
-		
-		
 	}
 }
