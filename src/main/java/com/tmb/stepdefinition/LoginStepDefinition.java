@@ -7,6 +7,7 @@ import com.tmb.pages.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import java.net.MalformedURLException;
 
 public class LoginStepDefinition {
     LoginPage loginPage;
