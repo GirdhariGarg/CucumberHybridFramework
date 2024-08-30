@@ -11,7 +11,7 @@ public class LoginPage {
 	public static WebDriver driver;
 	ChromeOptions co= new ChromeOptions();
 	
-	public WebDriver getdriver(){
+	public WebDriver getdriver  throws MalformedURLException (){
 		WebDriverManager.chromedriver().setup();
 		co.addArguments("--remote-origin-policy=.*");
 		driver =new ChromeDriver(co);
