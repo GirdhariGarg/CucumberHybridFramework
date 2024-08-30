@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 		tags = "",
 		features = "src//test//resources//feature",
 		glue = "com.tmb.stepdefinition",
-		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","json:target/cucumber.json"},
 		monochrome = true,
 		publish=true
 		
