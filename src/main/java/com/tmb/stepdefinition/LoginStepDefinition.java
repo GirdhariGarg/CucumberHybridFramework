@@ -16,8 +16,8 @@ public class LoginStepDefinition {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("some other precondition");
 		loginPage=new LoginPage();
-		driver =loginPage.getdriver();
-		
+		driver =loginPage.getdriver();	
+		driver.quit();
 	    //throw new io.cucumber.java.PendingException();
 	}
 
@@ -88,8 +88,7 @@ public class LoginStepDefinition {
 	public void i_verify_the_fail_in_step() {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("some other precondition");
-		
-		driver.quit();
+	
 	}
 
 
