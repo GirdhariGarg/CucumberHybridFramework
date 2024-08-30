@@ -14,7 +14,8 @@ public class LoginPage {
 		WebDriverManager.chromedriver().setup();
 		co.addArguments("--remote-origin-policy=.*");
 		driver =new ChromeDriver(co);
-		driver.get("https://www.google.co.in");
+		driver =new RemoteWebDriver(new URL("http://10.0.0.68:4444"), co);
+		//driver.get("https://www.google.co.in");
 		return driver;
 		
 		
